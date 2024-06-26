@@ -1,0 +1,6 @@
+[theme]
+base = "dark"
+primaryColor = "purple"
+
+[logger]
+messageFormat = "[%(levelname)-7s:%(name)s] %(funcName)s -> %(message)s"
