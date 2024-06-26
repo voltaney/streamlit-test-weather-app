@@ -3,7 +3,6 @@
 
 
 import csv
-import pprint
 from datetime import datetime
 
 import pandas as pd
