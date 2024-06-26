@@ -1,7 +1,3 @@
-#
-# https://www.cultivationdata.net/weather-web-api.html#twoweek
-
-
 import csv
 from datetime import datetime
 
@@ -13,6 +9,8 @@ from streamlit.logger import get_logger
 from open_meteo_api import fetch_daily_max_min_temp
 
 logger = get_logger(__name__)
+
+st.title("キャッシュ動作検証")
 
 timezone = "Asia/Tokyo"
 
@@ -26,7 +24,7 @@ pref_locations = pref_locations[1:]
 # session_stateに基づき、初来訪か判断
 if "first_visit" not in st.session_state:
     st.session_state["first_visit"] = True
-    st.info("このセッションは初めて確立されました")
+    st.info("このセッションは初めて確立されました(session_stateで判断)")
 
 logger.info(f"都道府県データの読込完了{len(pref_locations)}")
 
