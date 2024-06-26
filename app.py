@@ -38,7 +38,7 @@ def get_daily_temp(latitude, longitude):
     with st.spinner("API問い合わせ中"):
         data = fetch_daily_max_min_temp(latitude, longitude)
     dt_now = datetime.now()
-    st.markdown("キャッシュ作成日次: `%s`" % dt_now.strftime("%Y年%m月%d日 %H時%M分%S秒"))
+    st.markdown("キャッシュ作成日時: `%s`" % dt_now.strftime("%Y年%m月%d日 %H時%M分%S秒"))
     return data
 
 
