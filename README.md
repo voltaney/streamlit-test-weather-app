@@ -7,3 +7,7 @@
 
 ## 使用しているAPI
 - [Open-Meteo (Free Weather API)](https://open-meteo.com/)
+
+## 使用しているData
+- [日本地理情報を公開してくれているGitリポジトリ](https://github.com/dataofjapan/land/tree/master)の`prefecturalCapital.csv`
+  - Public Domain
