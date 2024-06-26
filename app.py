@@ -10,7 +10,7 @@ from open_meteo_api import fetch_daily_max_min_temp
 
 logger = get_logger(__name__)
 
-st.title("キャッシュ動作検証")
+st.set_page_config(page_title="キャッシュ動作検証")
 
 timezone = "Asia/Tokyo"
 
